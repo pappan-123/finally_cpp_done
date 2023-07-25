@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>C++</title>
+
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Blog Template">
+	<meta name="author" content="Xiaoying Riley at 3rd Wave Media">
+	<link rel="shortcut icon" href="favicon.ico">
+
+
+	<!-- FontAwesome JS-->
+	<script defer src="https://use.fontawesome.com/releases/v5.7.1/js/all.js"
+		integrity="sha384-eVEQC9zshBn0rFj4+TU78eNA19HMNigMviK/PU/FFjLXqa/GKPgX58rvt5Z8PLs7"
+		crossorigin="anonymous"></script>
+
+	<!-- Plugin CSS -->
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/styles/monokai-sublime.min.css">
+
+	<!-- Theme CSS -->
+	<link id="theme-style" rel="stylesheet" href="assets/css/theme-2.css">
+
+	<style>
+		.scrollabletextbox {
+			height: 500px;
+			width: 600px;
+			font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;
+			font-size: 70%;
+			overflow: -moz-hidden-unscrollable;
+			overflow-x: initial;
+			text-align: left;
+		}
+
+		.container1 {
+			height: 100px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		button {
+			margin-right: 20px;
+		}
+
+		.button {
+			background-color: #5BC3D5;
+			border: none;
+			color: white;
+			padding: 15px 32px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin: 4px 2px;
+			cursor: pointer;
+			-webkit-transition-duration: 0.4s;
+			transition-duration: 0.4s;
+			position: absolute;
+			right: 920px;
+			border-radius: 8px;
+		}
+
+		.button2:hover {
+			box-shadow: 0 12px 16px 0 rgba(11, 11, 11, 0.24), 0 17px 50px 0 rgba(7, 7, 7, 0.19);
+		}
+
+		.center{
+			text-align: center;
+		}
+	</style>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/CDNSFree2/PrismJS@latest/prism.min.css">
+</head>
+
+<body>
+
+	<header class="header text-center">
+		<h1 class="blog-name pt-lg-4 mb-0"><a href="index.html">C++ Projects</a></h1>
+
+		<nav class="navbar navbar-expand-lg navbar-dark">
+
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+				aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div id="navigation" class="collapse navbar-collapse flex-column">
+				<div class="profile-section pt-3 pt-lg-0">
+					<img class="profile-image mb-3 rounded-circle mx-auto" src="assets/images/imp.gif" alt="image">
+
+					<div class="bio mb-3">Hi, We Arkapravo Saha and Saptadeep Sen are 
+						currently pursuing our B.E degree in Electronics and Telecommunication from Jadavpur University.
+						We're  tech- enthusiast and have done several projects on web development on our own interest.
+						This is our first project where we want to show how C++ problems are solved and can be demonstrared by web-dev.
+						Briefly introduce yourself here. You can also give feedback by clicking on the get in touch button.<br></div>
+					<hr>
+				</div>
+
+				<ul class="navbar-nav flex-column text-left">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html"><i class="fas fa-home fa-fw mr-2"></i>Blog Home <span
+								class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item ">
+						<a class="nav-link" href="blog.html"><i class="fas fa-bookmark fa-fw mr-2"></i>Blog
+							Post</a>
+					</li>
+				</ul>
+
+				<div class="my-2 my-md-3">
+
+					<a class="btn btn-primary" href="get_touch.html" target="_blank">Get in Touch</a>
+
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<div class="main-wrapper">
+
+		<article class="blog-post px-3 py-5 p-md-5">
+			<div class="container">
+				<header class="blog-post-header">
+					<h2 class="title mb-2">Binary Search,Max Heap,Binary Search Tree Visualizer</h2>
+					<div class="meta mb-3"><span class="date">Published 3 months ago</span><span class="time">5 min
+							read</span><span class="comment"><a href="#">4 comments</a></span></div>
+				</header>
+		</article>
+
+		<div class="container my-20">
+			<div><h5> In computer science, a binary tree is a k-ary,
+				k=2 tree data structure in which each node has at most two children, 
+				which are referred to as the left child and the right child.Here we have demonstared the binary tree, binary search tree and max heap. 
+				<br><br>In binary search tree the left child is smaller than the parent and right child is greater than the parent.It is also applicable for all subtrees.
+				<br><br> In the other hand in max heap both the children are smaller than their parent and it is a complete binary tree.It is also applicable for all subtress. </h5></div>
+		</div>
+
+		<div class="container my-20">
+			<div><h5>Checkout the Visualisation of Binary Tree
+                <a href="https://binart-tree-vis.pages.dev/">Binary Tree Visualizer</a> </h5></div>
+		</div>
+
+
+		<div class="container my-4">
+			<pre>
+					  <code class="language-CPP">
+//SEARCH A NODE IN BINARY TREE
+#include&lt;bits/stdc++.h&gt;
+using namespace std;
+
+// Binary tree node
+struct Node {
+	int data;
+	struct Node *left, *right;
+	Node(int data)
+	{
+		this->data = data;
+		left = right = NULL;
+	}
+};
+
+// Function to traverse the tree in preorder
+// and check if the given node exists in it
+bool ifNodeExists(struct Node* node, int key)
+{
+	if (node == NULL)
+		return false;
+
+	if (node->data == key)
+		return true;
+
+	/* then recur on left subtree */
+	bool res1 = ifNodeExists(node->left, key);
+	// node found, no need to look further
+	if(res1) return true;
+
+	/* node is not found in left,
+	so recur on right subtree */
+	bool res2 = ifNodeExists(node->right, key);
+
+	return res2;
+}
+
+// Driver Code
+int main()
+{
+	struct Node* root = new Node(0);
+	root->left = new Node(1);
+	root->left->left = new Node(3);
+	root->left->left->left = new Node(7);
+	root->left->right = new Node(4);
+	root->left->right->left = new Node(8);
+	root->left->right->right = new Node(9);
+	root->right = new Node(2);
+	root->right->left = new Node(5);
+	root->right->right = new Node(6);
+
+	int key = 4;
+
+	if (ifNodeExists(root, key))
+		cout << "YES";
+	else
+		cout << "NO";
+
+	return 0;
+}
+ 					
+					  </code>
+					</pre>
+		</div>
+
+		<div class="container my-4">
+			<pre>
+					  <code class="language-CPP">
+// C++ program to demonstrate the use of priority_queue
+#include&lt;bits/stdc++.h&gt;
+using namespace std;
+
+// driver code
+int main()
+{
+	int arr[6] = { 10, 2, 4, 8, 6, 9 };
+
+	// defining priority queue
+	priority_queue<int> pq;
+
+	// printing array
+	cout << "Array: ";
+	for (auto i : arr) {
+		cout << i << ' ';
+	}
+	cout << endl;
+	// pushing array sequentially one by one
+	for (int i = 0; i < 6; i++) {
+		pq.push(arr[i]);
+	}
+
+	// printing priority queue
+	cout << "Priority Queue: ";
+	while (!pq.empty()) {
+		cout << pq.top() << ' ';
+		pq.pop();
+	}
+
+	return 0;
+}
+
+ 					
+					  </code>
+					</pre>
+		</div>
+
+		<div class="container my-4">
+			<pre>
+					  <code class="language-CPP">
+//SEARCH IN BINARY SEARCH TREE
+#include&lt;bits/stdc++.h&gt;
+using namespace std;
+
+struct node {
+	int key;
+	struct node *left, *right;
+};
+
+// A utility function to create a new BST node
+struct node* newNode(int item)
+{
+	struct node* temp
+		= new struct node;
+	temp->key = item;
+	temp->left = temp->right = NULL;
+	return temp;
+}
+
+// A utility function to insert
+// a new node with given key in BST
+struct node* insert(struct node* node, int key)
+{
+	// If the tree is empty, return a new node
+	if (node == NULL)
+		return newNode(key);
+
+	// Otherwise, recur down the tree
+	if (key < node->key)
+		node->left = insert(node->left, key);
+	else if (key > node->key)
+		node->right = insert(node->right, key);
+
+	// Return the (unchanged) node pointer
+	return node;
+}
+
+// Utility function to search a key in a BST
+struct node* search(struct node* root, int key)
+{
+	// Base Cases: root is null or key is present at root
+	if (root == NULL || root->key == key)
+		return root;
+
+	// Key is greater than root's key
+	if (root->key < key)
+		return search(root->right, key);
+
+	// Key is smaller than root's key
+	return search(root->left, key);
+}
+
+ 
+int main()
+{
+	struct node* root = NULL;
+	root = insert(root, 50);
+	insert(root, 30);
+	insert(root, 20);
+	insert(root, 40);
+	insert(root, 70);
+	insert(root, 60);
+	insert(root, 80);
+
+	// Key to be found
+	int key = 6;
+
+	// Searching in a BST
+	if (search(root, key) == NULL)
+		cout << key << " not found" << endl;
+	else
+		cout << key << " found" << endl;
+
+	key = 60;
+
+	// Searching in a BST
+	if (search(root, key) == NULL)
+		cout << key << " not found" << endl;
+	else
+		cout << key << " found" << endl;
+	return 0;
+}
+					
+					  </code>
+					</pre>
+		</div>
+
+	</div>
+	</div>
+	<!--//container-->
+
+
+	<div class="container1 my-0">
+		<button class="button button2" onclick="window.location.href='https://www.jdoodle.com/online-compiler-c++/';"
+			type="submit">RUN</button>
+	</div>
+   
+	
+         
+    
+
+	<footer class="footer text-center py-2 theme-bg-dark">
+
+		<!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
+		<small class="copyright">Designed with <i class="fas fa-heart" style="color: #fb866a;"></i> by <a
+				href="https://www.linkedin.com/in/arkapravo-saha-2aa5a5201/">Arkapravo Saha</a> and <a
+				href="https://www.linkedin.com/in/saptadeep-sen-a83b1a206/">Saptadeep Sen</a></small>
+
+	</footer>
+
+	</div><!--//main-wrapper-->
+ 
+
+
+	<!-- Javascript -->
+	<script src="assets/plugins/jquery-3.3.1.min.js"></script>
+	<script src="assets/plugins/popper.min.js"></script>
+	<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+	<!-- Page Specific JS -->
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/highlight.min.js"></script>
+
+	<!-- Custom JS -->
+	<script src="assets/js/blog.js"></script>
+
+	<!-- Style Switcher (REMOVE ON YOUR PRODUCTION SITE) -->
+	<script src="assets/js/demo/style-switcher.js"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/gh/CDNSFree2/PrismJS@latest/prism.min.js"></script>
+
+</body>
+
+</html>

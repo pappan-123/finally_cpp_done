@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>C++</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog Template">
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">
+    <link rel="shortcut icon" href="favicon.ico">
+
+
+    <!-- FontAwesome JS-->
+    <script defer src="https://use.fontawesome.com/releases/v5.7.1/js/all.js"
+        integrity="sha384-eVEQC9zshBn0rFj4+TU78eNA19HMNigMviK/PU/FFjLXqa/GKPgX58rvt5Z8PLs7"
+        crossorigin="anonymous"></script>
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/styles/monokai-sublime.min.css">
+
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/theme-2.css">
+
+    <style>
+        .scrollabletextbox {
+            height: 500px;
+            width: 600px;
+            font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;
+            font-size: 70%;
+            overflow: -moz-hidden-unscrollable;
+            overflow-x: initial;
+            text-align: left;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .container1 {
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        button {
+            margin-right: 20px;
+        }
+
+        .button {
+            background-color: #5BC3D5;
+            /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            -webkit-transition-duration: 0.4s;
+            /* Safari */
+            transition-duration: 0.4s;
+            position: absolute;
+            right: 920px;
+            border-radius: 8px;
+        }
+
+        .button2:hover {
+            box-shadow: 0 12px 16px 0 rgba(11, 11, 11, 0.24), 0 17px 50px 0 rgba(7, 7, 7, 0.19);
+        }
+    </style>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/CDNSFree2/PrismJS@latest/prism.min.css">
+</head>
+
+<body>
+
+    <header class="header text-center">
+		<h1 class="blog-name pt-lg-4 mb-0"><a href="index.html">C++ Projects</a></h1>
+
+		<nav class="navbar navbar-expand-lg navbar-dark">
+
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+				aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div id="navigation" class="collapse navbar-collapse flex-column">
+				<div class="profile-section pt-3 pt-lg-0">
+					<img class="profile-image mb-3 rounded-circle mx-auto" src="assets/images/imp.gif" alt="image">
+
+					<div class="bio mb-3">Hi, We Arkapravo Saha and Saptadeep Sen are 
+						currently pursuing our B.E degree in Electronics and Telecommunication from Jadavpur University.
+						We're  tech- enthusiast and have done several projects on web development on our own interest.
+						This is our first project where we want to show how C++ problems are solved and can be demonstrared by web-dev.
+						Briefly introduce yourself here. You can also give feedback by clicking on the get in touch button.<br></div>
+					<hr>
+				</div>
+
+				<ul class="navbar-nav flex-column text-left">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html"><i class="fas fa-home fa-fw mr-2"></i>Blog Home <span
+								class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item ">
+						<a class="nav-link" href="blog.html"><i class="fas fa-bookmark fa-fw mr-2"></i>Blog
+							Post</a>
+					</li>
+				</ul>
+
+				<div class="my-2 my-md-3">
+
+					<a class="btn btn-primary" href="get_touch.html" target="_blank">Get in Touch</a>
+
+				</div>
+			</div>
+		</nav>
+	</header>
+
+    <div class="main-wrapper">
+
+        <article class="blog-post px-3 py-5 p-md-5">
+            <div class="container">
+                <header class="blog-post-header">
+                    <h2 class="title mb-2">Tic-Tac-Toe</h2>
+                    <div class="meta mb-3"><span class="date">Published 3 months ago</span><span class="time">5 min
+                            read</span><span class="comment"><a href="#">4 comments</a></span></div>
+                </header>
+        </article>
+
+        <div class="container my-20">
+			<div><h5> Tic-tac-toe  is a paper-and-pencil game for two players who take turns 
+                marking the spaces in a three-by-three grid with X or O. The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row is the winner.
+                It is a solved game, with a forced draw assuming best play from both players.</h5></div>
+		</div>
+
+		<div class="container my-20">
+			<div><h5>Checkout the game in our website
+                <a href="https://tic-tac-toe-1.pages.dev/">Tic-Tac-Toe</a> </h5></div>
+		</div>
+
+
+        <div class="container my-4">
+            <pre>
+					  <code class="language-CPP">
+                    #include&lt;bits/stdc++.h&gt;
+                    using namespace std;
+                    //Array for the board
+                    char board[3][3] = {{'1', '2', '3'}, {'4', '5', '6'}, {'7', '8', '9'}};
+                    //Variable Declaration
+                    int choice;
+                    int row, column;
+                    char turn = 'X';
+                    bool draw = false;
+                    
+                    //Function to show the current status of the gaming board
+                    
+                    void display_board() {
+                    
+                        //Rander Game Board LAYOUT
+                    
+                        cout << "PLAYER - 1 [X]t PLAYER - 2 [O]nn";
+                        cout << "tt     |     |     n";
+                        cout << "tt  " << board[0][0] << "  | " << board[0][1] << "  |  " << board[0][2] << " n";
+                        cout << "tt_____|_____|_____n";
+                        cout << "tt     |     |     n";
+                        cout << "tt  " << board[1][0] << "  | " << board[1][1] << "  |  " << board[1][2] << " n";
+                        cout << "tt_____|_____|_____n";
+                        cout << "tt     |     |     n";
+                        cout << "tt  " << board[2][0] << "  | " << board[2][1] << "  |  " << board[2][2] << " n";
+                        cout << "tt     |     |     n";
+                    }
+                    
+                    //Function to get the player input and update the board
+                    
+                    void player_turn() {
+                        if (turn == 'X') {
+                            cout << "ntPlayer - 1 [X] turn : ";
+                        }
+                        else if (turn == 'O') {
+                            cout << "ntPlayer - 2 [O] turn : ";
+                        }
+                        //Taking input from user
+                        //updating the board according to choice and reassigning the turn Start
+                    
+                        cin >> choice;
+                    
+                        //switch case to get which row and column will be update
+                    
+                        switch (choice) {
+                        case 1: row = 0; column = 0; break;
+                        case 2: row = 0; column = 1; break;
+                        case 3: row = 0; column = 2; break;
+                        case 4: row = 1; column = 0; break;
+                        case 5: row = 1; column = 1; break;
+                        case 6: row = 1; column = 2; break;
+                        case 7: row = 2; column = 0; break;
+                        case 8: row = 2; column = 1; break;
+                        case 9: row = 2; column = 2; break;
+                        default:
+                            cout << "Invalid Move";
+                        }
+                    
+                        if (turn == 'X' && board[row][column] != 'X' && board[row][column] != 'O') {
+                            //updating the position for 'X' symbol if
+                            //it is not already occupied
+                            board[row][column] = 'X';
+                            turn = 'O';
+                        } else if (turn == 'O' && board[row][column] != 'X' && board[row][column] != 'O') {
+                            //updating the position for 'O' symbol if
+                            //it is not already occupied
+                            board[row][column] = 'O';
+                            turn = 'X';
+                        } else {
+                            //if input position already filled
+                            cout << "Box already filled!n Please choose another!!nn";
+                            player_turn();
+                        }
+                        /* Ends */
+                        display_board();
+                    }
+                    
+                    //Function to get the game status e.g. GAME WON, GAME DRAW GAME IN CONTINUE MODE
+                    
+                    bool gameover() {
+                        //checking the win for Simple Rows and Simple Column
+                        for (int i = 0; i < 3; i++)
+                            if (board[i][0] == board[i][1] && board[i][0] == board[i][2] || board[0][i] == board[1][i] && board[0][i] == board[2][i])
+                                return false;
+                    
+                        //checking the win for both diagonal
+                    
+                        if (board[0][0] == board[1][1] && board[0][0] == board[2][2] || board[0][2] == board[1][1] && board[0][2] == board[2][0])
+                            return false;
+                    
+                        //Checking the game is in continue mode or not
+                        for (int i = 0; i < 3; i++)
+                            for (int j = 0; j < 3; j++)
+                                if (board[i][j] != 'X' && board[i][j] != 'O')
+                                    return true;
+                    
+                        //Checking the if game already draw
+                        draw = true;
+                        return false;
+                    }
+                    
+                    //Program Main Method
+                    
+                    int main()
+                    {
+                        cout << "tttT I C K -- T A C -- T O E -- G A M Ettt";
+                        cout << "nttttFOR 2 PLAYERSnttt";
+                        while (gameover()) {
+                            display_board();
+                            player_turn();
+                            gameover();
+                        }
+                        if (turn == 'X' && draw == false) {
+                            cout << "nnCongratulations!Player with 'X' has won the game";
+                        }
+                        else if (turn == 'O' && draw == false) {
+                            cout << "nnCongratulations!Player with 'O' has won the game";
+                        }
+                        else
+                            cout << "nnGAME DRAW!!!nn";
+                    }
+					  </code>
+					</pre>
+        </div>
+    </div>
+    </div>
+    <!--//container-->
+
+
+    <div class="container1 my-0">
+        <button class="button button2" onclick="window.location.href='https://www.jdoodle.com/online-compiler-c++/';"
+            type="submit">RUN</button>
+    </div>
+
+   
+
+    <footer class="footer text-center py-2 theme-bg-dark">
+
+        <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
+        <small class="copyright">Designed with <i class="fas fa-heart" style="color: #fb866a;"></i> by <a
+                href="https://www.linkedin.com/in/arkapravo-saha-2aa5a5201/">Arkapravo Saha</a> and <a
+                href="https://www.linkedin.com/in/saptadeep-sen-a83b1a206/">Saptadeep Sen</a></small>
+
+    </footer>
+
+    </div><!--//main-wrapper-->
+ 
+ 
+
+    <!-- Javascript -->
+    <script src="assets/plugins/jquery-3.3.1.min.js"></script>
+    <script src="assets/plugins/popper.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Page Specific JS -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/highlight.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="assets/js/blog.js"></script>
+
+    <!-- Style Switcher (REMOVE ON YOUR PRODUCTION SITE) -->
+    <script src="assets/js/demo/style-switcher.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/CDNSFree2/PrismJS@latest/prism.min.js"></script>
+
+</body>
+
+</html>
